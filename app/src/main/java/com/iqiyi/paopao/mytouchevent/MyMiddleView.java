@@ -22,7 +22,7 @@ public class MyMiddleView extends FrameLayout implements View.OnClickListener, V
     @Override
     public boolean onInterceptTouchEvent(MotionEvent event) {
         Log.d(TAG,"MyMiddleView onInterceptTouchEvent" + event.getAction());
-        return true;
+        return super.onInterceptTouchEvent(event);
     }
 
     @Override
@@ -35,11 +35,12 @@ public class MyMiddleView extends FrameLayout implements View.OnClickListener, V
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         Log.d(TAG,"MyMiddleView onTouchEvent" +event.getAction());
-        if(event.getAction() == 0) {
-            return  true;
-        } else {
-            return false;
-        }
+//        if(event.getAction() == 0) {
+//            return  true;
+//        } else {
+//            return false;
+//        }
+        return super.onTouchEvent(event);
     }
 
     @Override
