@@ -1,0 +1,27 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <com.iqiyi.paopao.mytouchevent.myFrameLayout
+        android:id="@+id/mFrame"
+        android:layout_width="500dp"
+        android:layout_gravity="center"
+        android:layout_height="700dp"
+        android:background="#00FFFF" >
+     <com.iqiyi.paopao.mytouchevent.MyMiddleView
+         android:layout_width="300dp"
+         android:layout_height="300dp"
+         android:background="#00F">
+         <com.iqiyi.paopao.mytouchevent.MyImageView
+             android:id="@+id/mImage"
+             android:layout_width="150dp"
+             android:layout_height="150dp"
+             android:background="#00FF00"
+             android:layout_gravity="center" />
+
+     </com.iqiyi.paopao.mytouchevent.MyMiddleView>
+    </com.iqiyi.paopao.mytouchevent.myFrameLayout>
+
+</FrameLayout>
